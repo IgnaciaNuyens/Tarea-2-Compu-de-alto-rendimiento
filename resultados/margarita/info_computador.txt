@@ -1,0 +1,17 @@
+Fecha: Wed Oct 14 13:06:13 -03 2026
+Sistema: Linux 6.18.54.1-microsoft-standard-WSL2 x86_64
+Entorno: WSL (Linux dentro de Windows)
+CPU: Intel(R) Core(TM) i3-8130U CPU @ 2.20GHz
+Cores fisicos: 2
+Cores logicos: 4
+Threads por core: 2
+Reloj base: ver el valor @ en el nombre de la CPU (si aparece) o buscar el modelo en la web
+L1d cache:                               64 KiB (2 instances)
+L2 cache:                                512 KiB (2 instances)
+L3 cache:                                4 MiB (1 instance)
+Memoria RAM: 5 GB
+numba 0.68.0 | threads maximos numba: 4
+g++ src/serial.cpp -O3 -march=native -std=c++17 -fopenmp -o bin/serial
+g++ src/alg1_omp.cpp -O3 -march=native -std=c++17 -fopenmp -o bin/alg1_omp
+g++ src/alg2_omp.cpp -O3 -march=native -std=c++17 -fopenmp -o bin/alg2_omp
+Compilacion lista (binarios en bin/)
