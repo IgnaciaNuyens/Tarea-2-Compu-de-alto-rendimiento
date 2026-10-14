@@ -1,0 +1,17 @@
+Fecha: Wed Oct 14 11:52:53 -03 2026
+Sistema: Linux 6.18.40.1-microsoft-standard-WSL2 x86_64
+Entorno: WSL (Linux dentro de Windows)
+CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+Cores fisicos: 4
+Cores logicos: 8
+Threads por core: 2
+Reloj base: ver el valor @ en el nombre de la CPU (si aparece) o buscar el modelo en la web
+L1d cache:                               192 KiB (4 instances)
+L2 cache:                                5 MiB (4 instances)
+L3 cache:                                8 MiB (1 instance)
+Memoria RAM: 3 GB
+numba 0.66.0 | threads maximos numba: 8
+g++ src/serial.cpp -O3 -march=native -std=c++17 -fopenmp -o bin/serial
+g++ src/alg1_omp.cpp -O3 -march=native -std=c++17 -fopenmp -o bin/alg1_omp
+g++ src/alg2_omp.cpp -O3 -march=native -std=c++17 -fopenmp -o bin/alg2_omp
+Compilacion lista (binarios en bin/)
